@@ -22,10 +22,13 @@
       }
 
       body {
+        font-family: 'Raleway', sans-serif;
         /* 
           -Background color is #344a72
         */
         background-color: #344a72;
+        color: white;
+        /* line-height: 1.8; */
       }
 
       a {
@@ -41,7 +44,7 @@
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
         */
-        margin: auto;
+        margin: 30px auto;
         max-width: 500px;
         padding: 20px;
       }
@@ -50,7 +53,9 @@
         /* 
           This is the white area around the form and heading, etc
         */
-        background-color: white;
+        background: white;
+        padding: 15px 25px;
+        color: #333;
       }
 
       .form-wrap h1,
@@ -65,7 +70,7 @@
         /* 
           Each label, input is wrapped in .form-group
         */
-        /* PENDING */
+        margin-top: 15px;
       }
 
       .form-wrap .form-group label {
@@ -79,6 +84,9 @@
         /* 
           Inputs should reach accross the .form-wrap 100% and have some padding
         */
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
       }
 
       .form-wrap button {
@@ -86,30 +94,43 @@
           Button should wrap accross 100% and display as block
           Background color for button is #49c1a2
         */
+        width: 100%;
+        display: block;
+        background: #49c1a2;
+        padding: 10px;
+        margin-top: 15px;
+        color: white;
+        cursor: pointer;
       }
 
       .form-wrap button:hover {
         /* 
           Hover background color for button is #37a08e
         */
+        background-color: #37a08e;
       }
 
       .form-wrap .bottom-text {
         /* 
           Bottom text is smaller
         */
+        font-size: 13px;
+        margin-top: 15px;
       }
 
       footer {
         /* 
         Should be centered
        */
+       text-align: center;
+       margin-top: 15px;
       }
 
       footer a {
         /* 
           Footer link color is #49c1a2
         */
+        color: #49c1a2;
       }
     </style>
   </head>
