@@ -126,3 +126,8 @@ img {
   border-radius: 50%;
   border: none;
 }
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
