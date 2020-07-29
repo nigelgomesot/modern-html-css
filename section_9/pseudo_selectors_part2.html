@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseud Selectors Part 2</title>
+  <style>
+    .is-required:after {
+      content: '*';
+      color: red;
+      padding-left: 2px;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background: #333;
+      color: #fff;
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+    }
+
+    header::before {
+      content: '';
+      background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <!-- <label for="name" class="is-required">Name</label>
+  <input type="text" id="name"> -->
+
+  <header>
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, qui.</p>
+  </header>
+
+  <section>
+    <h3>Lorem, ipsum dolor.</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, quas. Porro aperiam incidunt veritatis aspernatur hic perferendis eum molestias doloribus.</p>
+  </section>
+</body>
+</html>
